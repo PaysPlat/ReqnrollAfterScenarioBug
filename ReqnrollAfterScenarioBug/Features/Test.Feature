@@ -3,5 +3,12 @@
     Scenario: Call_Normal_Step
         When I call normal step
 
-    Scenario: Call_Inconclusive_Step
-        When I finish scenario with inconclusive status
+    Scenario: End_Scenario_With_Status
+        When I finish scenario with '<Status>' status
+
+    Examples:
+      | Status       |
+      | Success      |
+      | Failed       |
+      | Inconclusive |
+      | Skipped      |

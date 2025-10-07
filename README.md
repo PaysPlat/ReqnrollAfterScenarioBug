@@ -4,7 +4,6 @@
 
 Execute scenarios in `Features\Tests.feature`
 
-Watch test execution console:
+Watch test execution console for each scenario, we expect Before & After Scenario are called for each scenario.
 
-- Scenario Call_Normal_Step : Before scenario & after scenario hooks are executed
-- Scenario Call_Inconclusive_Step : Only before scenario hook is executed, after scenario is never called
+This is not the case for Inconclusive & Skipped.
